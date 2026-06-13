@@ -1,0 +1,96 @@
+body{
+    background-color: #111111;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 28px; /* Smaller text for smaller screens */
+    }
+
+    .content .normal_text {
+        font-size: 18px; /* Easier to read on mobile */
+    }
+
+    .navbar {
+        padding: 15px 20px; /* Even tighter padding for phones */
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #111111;
+}
+.nav-links {
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color : #a0a0a0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.logo {
+    color: #888888; /* Grayish color for the logo */
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo a{
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the .logo class */
+}
+.logo:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+.nav-links a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+.content{
+    width: 100%;
+    max-width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content h1{
+    max-width: 800px;
+    margin: 40px 0 20px 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: left;
+}
+.content .gray_text{
+    color: #a0a0a0;
+}
+.content .quote{
+    color: #ffffff;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.content .normal_text{
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 25px;}
+.image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    
+}
+.highlight{
+    color:yellow;
+}
