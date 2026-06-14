@@ -1,23 +1,61 @@
-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 800px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  
+/* Base styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: white;
 }
-th, td {
-  padding: 10px 14px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+
+/* Header section styling */
+.header {
+  height: 200px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #444;
 }
-th {
-  background-color: #f8f9fa;
-  font-weight: 600;
+
+/* Element that sticks to the top of the viewport when scrolling */
+/* Элемент, который будет прилипать */
+.sticky-element {
+  position: sticky;
+  top: 0; /* Distance from the top edge where the element "freezes" */
+  /* Дистанция от верхнего края, где элемент "застынет" */
+  background-color: #ffcc00;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 100;
 }
-tr:nth-child(even) {
-  background-color: #f8f9fa;
+
+/* Main content container with a gradient background */
+.content {
+  padding: 20px;
+  background: linear-gradient(#111, #444);
 }
-tr:hover {
-  background-color: rgba(0,0,0,0.05);
+
+/* Spacing between different sections */
+section {
+  margin-bottom: 100px;
+}
+
+/* Wrapper used to clip the corners of inner elements using overflow: hidden */
+.border-wrapper {
+  border-radius: 25px;
+  overflow: hidden; /* This will clip the corners of the inner border */
+  /* Это обрежет углы внутренней рамки */
+  display: inline-block; /* Width logic */
+  /* Или любая другая логика ширины */
+}
+
+/* Example element demonstrating border-image properties */
+.test_border {
+  border: 20px solid;
+  border-image-source: url("images/border_test.jpeg");
+  border-image-slice: 40;
+  border-image-repeat: round;
+  padding: 20px;
 }
