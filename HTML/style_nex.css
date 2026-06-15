@@ -56,6 +56,5 @@ section {
   border: 20px solid;
   border-image-source: url("images/border_test.jpeg");
   border-image-slice: 40;
-  border-image-repeat: round;
   padding: 20px;
 }
