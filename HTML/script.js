@@ -66,5 +66,5 @@ alert(+apples + +oranges); // 5
 
 // three operations in one line
 for (let a = 1, b = 3, c = a * b; a < 10; a++) {
-    console.log(a, b, c);
+  console.log(a, b, c);
 }
